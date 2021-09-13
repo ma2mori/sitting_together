@@ -13,7 +13,7 @@ class IndexController extends Controller
 		$shops = Index::all();
 
 		return view('index',[
-			$shops => $shops,
+			'shops' => $shops,
 		]);
 
 	}
