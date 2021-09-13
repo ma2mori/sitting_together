@@ -27,7 +27,6 @@ class ShopTable extends Migration
    $table->string('mens_charge');
    $table->string('price_weekdays_per10m');
    $table->string('price_holiday_per10m');
-   $table->timestamps();
   });
  }
 
