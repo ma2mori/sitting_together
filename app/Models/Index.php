@@ -9,6 +9,8 @@ class Index extends Model
 {
  use HasFactory;
 
+ protected $table = 'shops';
+
  protected $fillable = [
   'shop_id',
   'code',
