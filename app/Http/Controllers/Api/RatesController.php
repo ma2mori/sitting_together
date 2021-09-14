@@ -15,12 +15,12 @@ class RatesController extends Controller
   * @param  str  $code
   * @return \Illuminate\Http\Response
   */
- public function update(Request $request, $id)
+ public function update(Request $request, $code)
  {
-  $rate = Rate::find($id);
+  $rate = Rate::find($code);
   $rate->mens = $request->mens;
   $rate->womens = $request->womens;
   $rate->save();
-  return redirect('api/rates/'.$id);
+  return redirect('api/rates/'.$code);
  }
 }
