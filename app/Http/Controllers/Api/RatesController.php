@@ -17,11 +17,11 @@ class RatesController extends Controller
   */
  public function update(Request $request, $code)
  {
-  $rate = Rate::where('code',$code)->get();
+  $rate = Rate::query();
   // $rate->mens = $request->mens;
   // $rate->womens = $request->womens;
   // $rate->save();
-  $rate->fill($request->all())->save();
+  $rate->where('code',$code)->fill($request->all())->save();
   return redirect('api/rates/'.$code);
  }
 }
