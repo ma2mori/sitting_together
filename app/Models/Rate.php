@@ -15,7 +15,7 @@ class Rate extends Model
   'id',
   'shop_id',
   'code',
-  'nens',
+  'mens',
   'womens',
   ];
 
