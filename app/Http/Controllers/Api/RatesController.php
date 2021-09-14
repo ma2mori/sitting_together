@@ -12,15 +12,15 @@ class RatesController extends Controller
   * Update the specified resource in storage.
   *
   * @param  \Illuminate\Http\Request  $request
-  * @param  str  $code
+  * @param  str  $id
   * @return \Illuminate\Http\Response
   */
- public function update(Request $request, $code)
+ public function update(Request $request, $id)
  {
-  $rate = Rate::where('code',$code);
+  $rate = Rate::find($id);
   $rate->mens = $request->mens;
   $rate->womens = $request->womens;
   $rate->save();
-  return redirect('api/rates/'.$code);
+  return redirect('api/rates/'.$id);
  }
 }
