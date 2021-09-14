@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::group(['middleware' => ['api']], function () {
- Route::resource('articles', 'Api\RatesController');
+ Route::resource('rates', 'App\Http\Controllers\Api\RatesController',['except' => ['index','store','create','show','destroy','edit']]);
 });
