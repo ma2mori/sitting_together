@@ -18,9 +18,10 @@ class RatesController extends Controller
  public function update(Request $request, $id)
  {
   $rate = Rate::find($id);
-  $rate->mens = $request->mens;
-  $rate->womens = $request->womens;
-  $rate->save();
+  // $rate->mens = $request->mens;
+  // $rate->womens = $request->womens;
+  // $rate->save();
+  $rate->fill($request->all())->save();
   return redirect('api/rates/'.$id);
  }
 }
