@@ -18,8 +18,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
  return $request->user();
 });
 
-Route::post('/api/rate/{id}','App\Http\Controllers\Api\RatesController\update');
-
-// Route::group(['middleware' => ['api']], function () {
-//  Route::resource('rates', 'App\Http\Controllers\Api\RatesController',['except' => ['index','store','create','show','destroy','edit']]);
-//});
+Route::group(['middleware' => ['api']], function () {
+ Route::resource('rates', 'App\Http\Controllers\Api\RatesController',['except' => ['index','store','create','show','destroy','edit']]);
+});
