@@ -1,5 +1,5 @@
 @foreach ($shops as $s)
  <pre>
-  {{ $s->id }}
+  {{ $s->id.':'.$s->mens }}
  </pre>
 @endforeach
