@@ -2065,15 +2065,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 /* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_bootstrap__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm.js");
-/* harmony import */ var _components_IndexRate_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/IndexRate.vue */ "./resources/js/components/IndexRate.vue");
-/* harmony import */ var _components_IndexRate_vue__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_IndexRate_vue__WEBPACK_IMPORTED_MODULE_1__);
+Object(function webpackMissingModule() { var e = new Error("Cannot find module './components/IndexRate'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
 
 var app = new vue__WEBPACK_IMPORTED_MODULE_2__["default"]({
   el: '#app',
   components: {
-    IndexRate: (_components_IndexRate_vue__WEBPACK_IMPORTED_MODULE_1___default())
+    IndexRate: Object(function webpackMissingModule() { var e = new Error("Cannot find module './components/IndexRate'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
   }
 });
 
@@ -28023,16 +28022,6 @@ if (inBrowser) {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Vue);
 
-
-/***/ }),
-
-/***/ "./resources/js/components/IndexRate.vue":
-/*!***********************************************!*\
-  !*** ./resources/js/components/IndexRate.vue ***!
-  \***********************************************/
-/***/ (() => {
-
-throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n> <template>\n|   <span>aaa</span>\n| </template>");
 
 /***/ }),
 
