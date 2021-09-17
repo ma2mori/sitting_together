@@ -2,7 +2,9 @@
 @section('content')
  <section>
   @foreach ($shops as $s)
-   <foo-bar :prop-sample-price='@json($s->code)'></foo-bar>
+   <pre>
+    {{ $s->id . ':' . $s->mens }}/{{ $s->id . ':' . $s->womens }}
+   </pre>
   @endforeach
  </section>
 @endsection
