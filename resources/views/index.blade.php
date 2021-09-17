@@ -4,7 +4,7 @@
  <section>
   @foreach ($shops as $s)
    <pre>
-    {{ $s->id . ':' . $s->mens }}/{{ $s->id . ':' . $s->womens }}
+    {{ $s->id . ':' . $s->mens }}/{{ $s->womens }}
    </pre>
   @endforeach
  </section>
