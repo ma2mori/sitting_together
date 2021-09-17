@@ -1,3 +1,5 @@
-<pre>
- <?print_r($shops)?>
-</pre>
+@foreach ($shops as $s)
+ <pre>
+  {{ $s->id }}
+ </pre>
+@endforeach
