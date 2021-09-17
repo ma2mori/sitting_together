@@ -10,7 +10,9 @@ class IndexController extends Controller
 
 	public function showIndex(){
 
-		$shops = Index::all();
+		$shops = Index::select()
+		->join('rates','rates.id','=','shops.id')
+		->get();
 
 		return view('index',[
 			'shops' => $shops,
