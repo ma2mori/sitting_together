@@ -1,3 +1,4 @@
+@extends('app')
 @section('content')
  @foreach ($shops as $s)
   <pre>
