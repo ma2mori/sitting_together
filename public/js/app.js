@@ -2072,7 +2072,7 @@ Object(function webpackMissingModule() { var e = new Error("Cannot find module '
 var app = new vue__WEBPACK_IMPORTED_MODULE_2__["default"]({
   el: '#app',
   components: {
-    index: Object(function webpackMissingModule() { var e = new Error("Cannot find module './components/index'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+    FooBar: Object(function webpackMissingModule() { var e = new Error("Cannot find module './components/index'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
   }
 });
 
