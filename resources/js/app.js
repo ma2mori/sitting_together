@@ -1,10 +1,10 @@
 import './bootstrap'
 import Vue from 'vue'
-import FooBar  from './components/index'
+import IndexRate from './components/IndexRate'
 
 const app = new Vue({
   el: '#app',
   components: {
-   FooBar ,
+   IndexRate ,
   }
 })
