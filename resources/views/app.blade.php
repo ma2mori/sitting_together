@@ -1,9 +1,9 @@
-@inject('AssetsAdmin', 'App\Assets\Assets')
+@inject('assets', 'App\Assets\AssetsAdmin')
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
- {{ AssetsAdmin->getAssets() }}
+ {{ $assets->getAssets() }}
 </head>
 
 <body>
