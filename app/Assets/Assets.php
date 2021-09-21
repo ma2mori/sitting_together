@@ -2,6 +2,8 @@
 
 namespace App\Assets;
 
+use Illuminate\Support\Facades\Route;
+
 class AssetsAdmin
 {
 
