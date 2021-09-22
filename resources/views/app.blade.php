@@ -1,7 +1,9 @@
+@inject('assets', 'App\Assets\Assets')
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
+ <?=$assets->getAssets()?>
 </head>
 
 <body>
