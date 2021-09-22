@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 class Assets
 {
 
-	public $_css_path = '/public/css/';
+	public $_css_path = '/css/';
 
 	public function __construct()
 	{
