@@ -1,9 +1,7 @@
-@inject('assets', 'App\Assets\AssetsAdmin')
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
- <?//=$assets->getAssets()?>
 </head>
 
 <body>
