@@ -11,7 +11,7 @@ class AssetsAdmin
 
 	public function __construct()
 	{
-		$this->_route_name = Route::current()->getName();
+		$this->_route_name = Route::currentRouteName();
 		$this->setStyleSheet($this->_route_name);
 	}
 
