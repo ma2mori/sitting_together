@@ -33,15 +33,16 @@ class AssetsAdmin
 		return $this->_css;
 	}
 
-	public function getStyleSheet()
-	{
-		return $this->_css;
-	}
+	// public function getStyleSheet()
+	// {
+	// 	return $this->_css;
+	// }
 
-	public function getAssets()
-	{
-		foreach ($this->getStyleSheet() as $val) {
-			echo '<link rel="stylesheet" href="' . $val . '" async>';
-		}
-	}
+	// public function getAssets()
+	// {
+	// 	foreach ($this->getStyleSheet() as $val) {
+	// 		echo '<link rel="stylesheet" href="' . $val . '" async>';
+	// 	}
+	// }
+
 }
