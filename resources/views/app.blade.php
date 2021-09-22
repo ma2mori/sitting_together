@@ -3,7 +3,7 @@
 <html lang="ja">
 
 <head>
- <?=$assets->getAssets()?>
+ {{ $assets->getAssets() }}
 </head>
 
 <body>
