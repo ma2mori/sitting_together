@@ -1,3 +1,4 @@
+@inject('assets', 'App\Assets\AssetsAdmin')
 <!DOCTYPE html>
 <html lang="ja">
 
