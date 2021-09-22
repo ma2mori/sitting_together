@@ -4,7 +4,7 @@ namespace App\Assets;
 
 use Illuminate\Support\Facades\Route;
 
-class AssetsAdmin
+class Assets
 {
 
 	public $_css_path = '/public/css/';
