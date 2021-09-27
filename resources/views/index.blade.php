@@ -1,6 +1,8 @@
 @extends('app')
 @section('content')
+ <h3>Vueコンポーネント</h3>
  <index-rate></index-rate>
+ 
  <section>
   @foreach ($shops as $s)
    <pre>
