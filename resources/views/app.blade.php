@@ -3,7 +3,6 @@
 <html lang="ja">
 
 <head>
- <script src="{{ mix('js/app.js') }}"></script>
  {{ $assets->getAssets() }}
 </head>
 
@@ -11,7 +10,8 @@
  <div id="app">
   @yield('content')
  </div>
-
 </body>
+
+<script src="{{ mix('js/app.js') }}"></script>
 
 </html>
