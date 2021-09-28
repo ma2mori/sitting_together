@@ -2,7 +2,7 @@
 @section('content')
  @auth
  <p>ログイン済み</p>
- <form action="{{route('logout')}}">
+ <form method="POST" action="{{route('logout')}}">
   @csrf
   <button>ログアウト</button>
  </form>
