@@ -1,6 +1,12 @@
 @extends('app')
 @section('content')
- <h3>Vueコンポーネント</h3>
+ @auth
+ <p>ログイン済み</p>
+ @endauth
+ @guest
+ <p>ゲスト</p>
+ @endguest
+ <p>Vueコンポーネント</p>
  <index-rate></index-rate>
  
  <section>
