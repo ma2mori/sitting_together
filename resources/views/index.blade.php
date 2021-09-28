@@ -2,9 +2,14 @@
 @section('content')
  @auth
  <p>ログイン済み</p>
+ <form action="{{route('logout')}}">
+  @csrf
+  <button>ログアウト</button>
+ </form>
  @endauth
  @guest
- <p>ゲスト</p>
+ <p>ゲストさん</p>
+ <a href="{{ route('login') }}">ログイン</a>
  @endguest
  <p>Vueコンポーネント</p>
  <index-rate></index-rate>
