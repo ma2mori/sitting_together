@@ -17,7 +17,8 @@ class Assets
 
 	public function setStyleSheet($name)
 	{
-		$css = [];
+		$css   = [];
+		$css[] = $this->_css_path . 'app.css';
 
 		switch ($name) {
 
