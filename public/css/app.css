@@ -1,3 +1,49 @@
-.form-wrap{
-  margin: auto;
+body {
+ margin: 0;
+ font-size: 11px;
+ font-family: 'Lato', 'Noto Sans JP' !important;
+ line-height: 1.5;
+ padding-bottom: 55px;
+ color: #333;
+}
+
+ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+p, form, h1, h2, h3 {
+ margin: 0;
+}
+
+a {
+ text-decoration: none;
+ cursor: pointer;
+ -webkit-tap-highlight-color: transparent;
+}
+
+select {
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ font-family: Lato;
+ border: 1px solid;
+}
+
+button {
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ border: none;
+}
+
+.form-wrap {
+ margin: auto;
+ width: 65vw;
+}
+
+.form-wrap form {
+ display: flex;
+ flex-direction: column;
 }
