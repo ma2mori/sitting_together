@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
- <p>{{ __('Reset Password') }}</p>
+ <p>{{ __('Reset Password') }}</p><br>
 
  <div class="form-wrap">
   <form method="POST" action="{{ route('password.update') }}">
