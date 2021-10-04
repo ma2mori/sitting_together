@@ -14,7 +14,7 @@ class ShopsController extends Controller
   $shop_id = $request->route()->parameter('id');
   $shop_detail = Index::where('shop_id',$shop_id)->get();
 
-  if(!$shop_id || $shop_detail->isEmpty() == true){
+  if(!$shop_id){
    return redirect('/');
   }
 
