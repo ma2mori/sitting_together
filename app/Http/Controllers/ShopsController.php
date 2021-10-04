@@ -18,9 +18,7 @@ class ShopsController extends Controller
   //  return redirect('/');
   // }
 
-  return view('shops.shop_detail',[
-   'shop_id' => $shop_id,
-  ]);
+  return view('home');
 
  }
 
