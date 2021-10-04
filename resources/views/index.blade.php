@@ -18,7 +18,7 @@
   <ul>
    @foreach ($shops as $s)
     <li>
-     <a href="">
+     <a href="{{ route('shop',$s->id) }}">
       <div>
        <p>{{ $s->code }}</p>
        <p>
