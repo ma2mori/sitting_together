@@ -12,13 +12,15 @@ class ShopsController extends Controller
 
   $request->flash();
   $shop_id = $request->route()->parameter('shop-id');
-  // $shop_detail = Index::where('shop_id',$shop_id)->get();
+  $shop_detail = Index::where('shop_id',$shop_id)->get();
 
-  // if(!$shop_id || $shop_detail->isEmpty() == true){
-  //  return redirect('/');
-  // }
+  if(!$shop_id || $shop_detail->isEmpty() == true){
+   return redirect('/');
+  }
 
-  return view('home');
+  return view('shops.shop_detail',[
+   'shop_detail' => $shop_detail,
+  ]);
 
  }
 
