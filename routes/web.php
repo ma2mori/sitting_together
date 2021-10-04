@@ -8,4 +8,4 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 Route::get('/','App\Http\Controllers\IndexController@showIndex')->name('/');
 Route::get('/home','App\Http\Controllers\HomeController@index')->name('home');
-Route::get('/shops/{id}','App\Http\Controllers\ShopsController@showShopDetail')->name('shop');
+Route::get('/shops/{shop-id}','App\Http\Controllers\ShopsController@showShopDetail')->name('shop');
