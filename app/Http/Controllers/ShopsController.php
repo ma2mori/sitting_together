@@ -12,7 +12,7 @@ class ShopsController extends Controller
 
   $request->flash();
   $shop_id = $request->route()->parameter('id');
-  $shop_detail = Index::where('shop_id',$shop_id)->get();
+  $shop_detail = Index::where('id',$shop_id)->get();
 
   if(!$shop_id){
    return redirect('/');
