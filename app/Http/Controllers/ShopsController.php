@@ -19,7 +19,7 @@ class ShopsController extends Controller
   }
 
   return view('shops.shop_detail',[
-   'shop_detail' => $shop_detail,
+   'shop_detail' => $shop_detail[0],
   ]);
 
  }
