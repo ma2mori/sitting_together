@@ -26,7 +26,11 @@ class Assets
 				$css[] = $this->_css_path . 'index.css';
 				break;
 
-			default:
+			case 'shop':
+				$css[] = $this->_css_path . 'shop.css';
+				break;
+
+				default:
 				break;
 		}
 
