@@ -30,6 +30,10 @@ class Assets
     $css[] = $this->_css_path . 'shop.css';
     break;
 
+   case 'mypage.edit-profile':
+    $css[] = $this->_css_path . 'mypage.css';
+    break;
+
    default:
     break;
   }
