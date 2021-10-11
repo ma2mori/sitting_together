@@ -10,6 +10,8 @@ class ProfileController extends Controller
 {
  public function showProfileEditForm()
  {
-  return view('mypage.profile_edit_form')->with('user', Auth::user());
+  return view('mypage.profile_edit_form',[
+   'user', Auth::user(),
+  ]);
  }
 }
