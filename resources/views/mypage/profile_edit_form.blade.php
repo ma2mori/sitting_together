@@ -2,5 +2,5 @@
 @section('content')
 
 <pre>
- <?print_r($user)?>
+ <?//print_r($user)?>
 </pre>
