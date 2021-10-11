@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
 
 // Route::get('/', function () {
 //  return view('index');
@@ -11,5 +12,5 @@ Route::get('/home','App\Http\Controllers\HomeController@index')->name('home');
 Route::get('/shops/{id}','App\Http\Controllers\ShopsController@showShopDetail')->name('shop');
 
 Route::group(['middleware' => ['auth']],function(){
-	Route::get('/mypage/edit-profile','App\Http\Controllers\MyPage\ProfileController@showProfileEditForm')->name('mypage.edit-profile');
+	Route::get('/mypage/edit-profile','MyPage\ProfileController@showProfileEditForm')->name('mypage.edit-profile');
 });
