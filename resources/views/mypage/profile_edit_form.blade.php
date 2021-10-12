@@ -10,7 +10,7 @@
 
   @csrf
  
-  <img src="img/user-shape.png">
+  <img class="user-icon" src="/img/user-shape.png">
   <input type="file" name="avatar" id="avatar" accept="image/png,image/jpeg,image/gif">
 
   <label for="name">nickname</label>
