@@ -14,4 +14,5 @@ Route::get('/shops/{id}', [ShopsController::class, 'showShopDetail'])->name('sho
 
 Route::group(['middleware' => 'auth'], function () {
  Route::get('/mypage/edit-profile', [ProfileController::class, 'showProfileEditForm'])->name('mypage.edit-profile');
+	Route::post('/mypage/edit-profile', [ProfileController::class, 'editProfile'])->name('mypage.edit-profile');
 });
