@@ -1,22 +1,29 @@
 @extends('layouts.app')
 @section('content')
 
-<form method="POST" action="{{ route('mypage.edit-profile') }}" enctype="multipart/form-data">
+<br>
+<br>
 
- @csrf
+<div class="form-wrap">
 
- <input type="file" name="avatar" id="avatar" accept="image/png,image/jpeg,image/gif">
- <label for="avatar">default-img</label>
+ <form method="POST" action="{{ route('mypage.edit-profile') }}" enctype="multipart/form-data">
 
- <label for="name">nickname</label>
- <input type="text" name="name" id="name" value="{{ old('name', $user->name) }}" required autocomplete="name" autofocus>
+  @csrf
+ 
+  <img src="img/user-shape.png">
+  <input type="file" name="avatar" id="avatar" accept="image/png,image/jpeg,image/gif">
 
- @error('name')
-  <b>{{ $message }}</b>
- @enderror
+  <label for="name">nickname</label>
+  <input type="text" name="name" id="name" value="{{ old('name', $user->name) }}" required autocomplete="name" autofocus>
+ 
+  @error('name')
+   <b>{{ $message }}</b>
+  @enderror
+ 
+  <button type="submit">submit</button>
+ 
+ </form>
 
- <button type="submit">submit</button>
-
-</form>
+</div>
 
 @endsection
