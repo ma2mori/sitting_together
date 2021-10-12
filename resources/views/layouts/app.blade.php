@@ -3,6 +3,7 @@
 <html lang="ja">
 
 <head>
+ <meta content="width=device-width, initial-scale=1" name="viewport">
  {{ $assets->getAssets() }}
 </head>
 
