@@ -6,6 +6,10 @@
 
 <div class="form-wrap">
 
+ @if (session('status'))
+ {{ session('status') }}
+ @endif
+
  <form method="POST" action="{{ route('mypage.edit-profile') }}" enctype="multipart/form-data">
 
   @csrf
