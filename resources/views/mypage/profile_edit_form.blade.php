@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-{{-- 
+
 <br>
 <br>
 
@@ -28,6 +28,6 @@
  
  </form>
 
-</div> --}}
+</div>
 
 @endsection
