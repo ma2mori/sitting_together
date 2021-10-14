@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ShopsController;
-use App\Http\Controllers\Mypage\ProfileController;
+use App\Http\Controllers\MyPage\ProfileController;
 
 Auth::routes();
 
