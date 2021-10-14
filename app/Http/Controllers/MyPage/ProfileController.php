@@ -49,7 +49,7 @@ class ProfileController extends Controller
  private function makeTempPath()
  {
   $tmp_fp = tmpfile();
-  $meta = stream_get_mata_data($tmp_fp);
+  $meta = stream_get_meta_data($tmp_fp);
   return $meta['url'];
  }
 
