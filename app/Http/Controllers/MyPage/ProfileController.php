@@ -50,7 +50,7 @@ class ProfileController extends Controller
  {
   $tmp_fp = tmpfile();
   $meta = stream_get_meta_data($tmp_fp);
-  return $meta['url'];
+  return $meta['uri'];
  }
 
 
