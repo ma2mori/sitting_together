@@ -15,7 +15,7 @@
   @csrf
  
   @if (!empty($user->avatar_file_name))
-  <img class="user-icon" src="/storage/avatars/{{$user->avatar_file_name}}">
+  <img class="user-icon" src="{{Storage::disk('s3')->url($user->avatar_file_name)}}">
   @else
   <img class="user-icon" src="/img/user-shape.png">
   @endif
