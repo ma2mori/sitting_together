@@ -1,13 +1,13 @@
-<!--<template>
+<template>
   <span>aaa</span>
-</template>-->
+</template>
 
 <script>
-// export default {
-//   props: {
-//     propSamplePrice: {
-//       type: Number,
-//     },
-//   },
-// };
+export default {
+  props: {
+    propSamplePrice: {
+      type: Number,
+    },
+  },
+};
 </script>
