@@ -3,7 +3,9 @@
 
 <br>
 <br>
-
+<pre>
+ {{Storage::disk('s3')->url('avatars')}}
+</pre>
 <div class="form-wrap">
 
  @if (session('status'))
@@ -17,7 +19,7 @@
   @if (!empty($user->avatar_file_name))
   <img class="user-icon" src="/storage/avatars/{{$user->avatar_file_name}}">
   @else
-  <img class="user-icon" src="/img/user-shape.png">
+  <img class="user-icon" src="/storage/avatars/default_avatar.svg">
   @endif
   <input type="file" name="avatar" id="avatar" accept="image/png,image/jpeg,image/gif">
 
