@@ -8,6 +8,18 @@
 </head>
 
 <body>
+ <header>
+  @auth
+  <a href="{{ route('mypage.edit-profile') }}">mypage</a>
+  <form method="POST" action="{{ route('logout') }}">
+   @csrf
+   <button>ログアウト</button>
+  </form>
+  @endauth
+  @guest
+   <a href="{{ route('login') }}">ログイン</a>
+  @endguest
+ </header>
  <div id="app">
   @yield('content')
  </div>
