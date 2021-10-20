@@ -1,4 +1,3 @@
-import './bootstrap'
 import Vue from 'vue'
 import IndexRate from './components/IndexRate'
 
