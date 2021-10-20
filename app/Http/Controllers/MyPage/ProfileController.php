@@ -41,7 +41,7 @@ class ProfileController extends Controller
  {
   $temp_path = $this->makeTempPath();
   Image::make($file)->fit(200, 200)->save($temp_path);
-  $file_path = Storage::disk('s3')->put('/', new File($temp_path),'public');
+  $file_path = Storage::disk('s3')->put('/avatars', new File($temp_path),'public');
 
   return basename($file_path);
  }
