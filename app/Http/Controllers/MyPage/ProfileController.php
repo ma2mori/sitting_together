@@ -17,6 +17,7 @@ class ProfileController extends Controller
  {
   return view('mypage.profile_edit_form', [
    'user' => Auth::user(),
+   'path' => Storage::disk('s3')->url('avatars'),
   ]);
  }
 

@@ -17,9 +17,9 @@
   @csrf
  
   @if (!empty($user->avatar_file_name))
-  <img class="user-icon" src="/storage/avatars/{{$user->avatar_file_name}}">
+  <img class="user-icon" src="{{$path.'/'.$user->avatar_file_name}}">
   @else
-  <img class="user-icon" src="/storage/avatars/default_avatar.svg">
+  <img class="user-icon" src="{{$path.'/default_avatar.svg'}}">
   @endif
   <input type="file" name="avatar" id="avatar" accept="image/png,image/jpeg,image/gif">
 
