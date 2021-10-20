@@ -9,6 +9,7 @@
 
 <body>
  <header>
+  <a href="{{route('/')}}">top</a>
   @auth
   <a href="{{ route('mypage.edit-profile') }}">mypage</a>
   <form method="POST" action="{{ route('logout') }}">

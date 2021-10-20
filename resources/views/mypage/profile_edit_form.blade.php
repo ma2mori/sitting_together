@@ -3,10 +3,8 @@
 
 <br>
 <br>
-<pre>
- {{Storage::disk('s3')->url('avatars')}}
-</pre>
-<div class="form-wrap">
+
+ <div class="form-wrap">
 
  @if (session('status'))
  {{ session('status') }}
