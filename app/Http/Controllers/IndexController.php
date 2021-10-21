@@ -12,6 +12,7 @@ class IndexController extends Controller
 
 		$shops = Index::select()
 		->join('rates','rates.id','=','shops.id')
+		->where('rates.updated_at','>=',date('Y-m-01 00:00:00'))
 		->get();
 
 		return view('index',[
