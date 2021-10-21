@@ -8,17 +8,22 @@ use App\Models\Index;
 class IndexController extends Controller
 {
 
-	public function showIndex(){
+	public function showIndex()
+	{
+
+		$dt_from = new \Carbon\Carbon();
+		$dt_from->startOfMonth();
+
+		$dt_to = new \Carbon\Carbon();
+		$dt_to->endOfMonth();
 
 		$shops = Index::select()
-		->join('rates','rates.id','=','shops.id')
-		->where('rates.updated_at','>=',date('Y-m-01 00:00:00'))
-		->get();
+			->join('rates', 'rates.id', '=', 'shops.id')
+			->whereBetween('rates.updated_at', [$dt_from, $dt_to])
+			->get();
 
-		return view('index',[
+		return view('index', [
 			'shops' => $shops,
 		]);
-
 	}
-
 }
