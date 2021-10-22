@@ -13,7 +13,7 @@ class ReviewsTable extends Migration
   */
  public function up()
  {
-  Schema::table('reviews', function (Blueprint $table) {
+  Schema::create('reviews', function (Blueprint $table) {
    $table->id();
    $table->string('shop_id');
    $table->string('user_id');
