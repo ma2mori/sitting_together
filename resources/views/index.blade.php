@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
- <section>
+ <section class="shops-wrap">
   <ul>
    @foreach ($shops as $s)
     <li>
