@@ -6,7 +6,6 @@
     <li>
      <a href="{{ route('shop',$s->id) }}">
       <div>
-       <p>{{ $s->code }}</p>
        <p>
         <span class="men">
          Mens:<b>{{ $s->mens }}</b>
@@ -15,6 +14,7 @@
          Womens:<b>{{ $s->womens }}</b>
         </span>
        </p>
+       <p>{{ $s->name }}</p>
       </div>
      </a>
     </li>
