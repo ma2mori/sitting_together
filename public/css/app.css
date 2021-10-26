@@ -70,11 +70,9 @@ button {
 	flex-direction: column;
 }
 
-header .mypage {
-	margin-left: auto;
+header .top{
+	margin-right: auto;
 }
-
 header .login-btn {
 	margin-left: 10px;
-	height: 14px;
 }
