@@ -1,70 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-size: 11px;
-  font-family: 'Lato', 'Noto Sans JP' !important;
-  line-height: 1.5;
-  padding-bottom: 55px;
-  color: #333;
+	margin: 0;
+	font-size: 11px;
+	font-family: 'Lato', 'Noto Sans JP' !important;
+	line-height: 1.5;
+	padding-bottom: 55px;
+	color: #333;
 }
 
 header {
-  height: 60px;
-  border-bottom: 1px solid #ddd;
-  padding: 10px;
-  display: flex;
-  align-items: center;
+	height: 60px;
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+	display: flex;
+	align-items: center;
 }
 
 header a, header button {
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
-  text-decoration: underline;
-  background: transparent;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333;
+	text-decoration: underline;
+	background: transparent;
 }
 
 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 p, form, h1, h2, h3 {
-  margin: 0;
+	margin: 0;
 }
 
 a {
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
 }
 
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  font-family: Lato;
-  border: 1px solid;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-family: Lato;
+	border: 1px solid;
 }
 
 button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	cursor: pointer;
 }
 
 .form-wrap {
-  margin: auto;
-  width: 65vw;
+	margin: auto;
+	width: 65vw;
 }
 
 .form-wrap form {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
+}
+
+header .mypage {
+	margin-left: auto;
+}
+
+header .login-btn {
+	margin-left: 10px;
+	height: 14px;
 }
