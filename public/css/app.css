@@ -13,11 +13,11 @@ body {
 }
 
 header {
-  height: 60 px;
+  height:60px;
   border-bottom: 1 px solid #ddd;
-  padding: 10 px;
-  display: flex;
-  align-items: center;
+  padding:10px;
+  display:flex;
+  align-items:center;
 }
 
 ul {
