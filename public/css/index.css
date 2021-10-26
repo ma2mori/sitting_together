@@ -5,4 +5,12 @@
 .shops-wrap ul {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	column-gap: 20px;
+	row-gap: 20px;
+}
+
+.shops-wrap li {
+	border: 1px solid;
+	height: calc(100vw /3 - 33px);
+	width: calc(100vw /3 - 33px);
 }
