@@ -25,6 +25,7 @@ header a, header button {
   font-weight: bold;
   color: #333;
   text-decoration: underline;
+  background: transparent;
 }
 
 ul {
