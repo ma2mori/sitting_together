@@ -1,0 +1,8 @@
+.shops-wrap {
+	padding: 20px;
+}
+
+.shops-wrap ul {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
