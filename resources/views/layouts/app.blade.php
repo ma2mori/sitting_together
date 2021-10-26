@@ -4,21 +4,22 @@
 
 <head>
  <meta content="width=device-width, initial-scale=1" name="viewport">
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
  {{ $assets->getAssets() }}
 </head>
 
 <body>
  <header>
-  <a href="{{route('/')}}">top</a>
+  <a class="top" href="{{route('/')}}">TOP</a>
   @auth
-  <a href="{{ route('mypage.edit-profile') }}">mypage</a>
+  <a class="myoage" ref="{{ route('mypage.edit-profile') }}">マイページ</a>
   <form method="POST" action="{{ route('logout') }}">
    @csrf
-   <button>ログアウト</button>
+   <button class="login-btn">ログアウト</button>
   </form>
   @endauth
   @guest
-   <a href="{{ route('login') }}">ログイン</a>
+   <a  class="login-btn" href="{{ route('login') }}">ログイン</a>
   @endguest
  </header>
  <div id="app">
