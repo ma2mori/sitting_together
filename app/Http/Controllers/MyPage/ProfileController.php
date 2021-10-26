@@ -42,7 +42,7 @@ class ProfileController extends Controller
  {
   $temp_path = $this->makeTempPath();
   Image::make($file)->fit(200, 200)->save($temp_path);
-  $file_path = Storage::disk('s3')->put('/avatars', new File($temp_path),'public');
+  $file_path = Storage::disk('s3')->put('/avatars', new File($temp_path), 'public');
 
   return basename($file_path);
  }
@@ -53,7 +53,4 @@ class ProfileController extends Controller
   $meta = stream_get_meta_data($tmp_fp);
   return $meta['uri'];
  }
-
-
-
 }
