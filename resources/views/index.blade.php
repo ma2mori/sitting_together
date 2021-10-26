@@ -8,10 +8,10 @@
       <div>
        <p>{{ $s->code }}</p>
        <p>
-        <span>
+        <span class="men">
          Mens:<b>{{ $s->mens }}</b>
         </span>
-        <span>
+        <span class="women">
          Womens:<b>{{ $s->womens }}</b>
         </span>
        </p>
