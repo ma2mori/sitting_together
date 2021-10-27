@@ -13,11 +13,23 @@
 	border: 1px solid #fff;
 	height: calc(100vw /3 - 33px);
 	width: calc(100vw /3 - 33px);
-	padding: 10px;
 	border-radius: 10px;
 }
 
-.rates{
+.rate-wrap {
+	color: var(--base-link-text);
+	display: grid;
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+}
+
+.rates {
 	display: flex;
 	justify-content: space-between;
+}
+
+.rate-wrap .name {
+	font-size: 4vw;
+	text-align: center;
 }
