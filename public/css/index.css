@@ -10,7 +10,14 @@
 }
 
 .shops-wrap li {
-	border: 1px solid;
+	border: 1px solid #fff;
 	height: calc(100vw /3 - 33px);
 	width: calc(100vw /3 - 33px);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.rates{
+	display: flex;
+	justify-content: space-between;
 }

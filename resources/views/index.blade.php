@@ -8,10 +8,10 @@
       <div class="rate-wrap">
        <p class="rates">
         <span class="men">
-         Mens:<b>{{ $s->mens }}</b>
+         ♂<b>{{ $s->mens }}</b>
         </span>
         <span class="women">
-         Womens:<b>{{ $s->womens }}</b>
+         ♀<b>{{ $s->womens }}</b>
         </span>
        </p>
        <p class="name">{{ $s->name }}</p>
