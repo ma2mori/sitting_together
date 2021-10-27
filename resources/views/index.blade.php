@@ -6,7 +6,7 @@
     <li>
      <a href="{{ route('shop',$s->id) }}">
       <div class="rate-wrap">
-       <p>
+       <p class="rates">
         <span class="men">
          Mens:<b>{{ $s->mens }}</b>
         </span>
@@ -14,7 +14,7 @@
          Womens:<b>{{ $s->womens }}</b>
         </span>
        </p>
-       <p>{{ $s->name }}</p>
+       <p class="name">{{ $s->name }}</p>
       </div>
      </a>
     </li>
