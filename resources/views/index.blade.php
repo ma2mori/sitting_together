@@ -5,7 +5,7 @@
    @foreach ($shops as $s)
     <li>
      <a href="{{ route('shop',$s->id) }}">
-      <div>
+      <div class="rate-wrap">
        <p>
         <span class="men">
          Mens:<b>{{ $s->mens }}</b>
