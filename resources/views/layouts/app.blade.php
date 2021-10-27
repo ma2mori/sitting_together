@@ -12,14 +12,14 @@
  <header>
   <a class="top" href="{{route('/')}}">TOP</a>
   @auth
-  <a class="mypage" ref="{{ route('mypage.edit-profile') }}">マイページ</a>
+  <a class="mypage" ref="{{ route('mypage.edit-profile') }}">MYPAGE</a>
   <form method="POST" action="{{ route('logout') }}">
    @csrf
-   <button class="login-btn out">ログアウト</button>
+   <button class="login-btn out">LOGOUT</button>
   </form>
   @endauth
   @guest
-   <a  class="login-btn" href="{{ route('login') }}">ログイン</a>
+   <a  class="login-btn" href="{{ route('login') }}">LOGIN</a>
   @endguest
  </header>
  <div id="app">
