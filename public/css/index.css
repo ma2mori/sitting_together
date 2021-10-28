@@ -32,6 +32,7 @@
 .rate-wrap .name {
 	font-size: 4vw;
 	text-align: center;
+	align-self: end;
 }
 
 .rates .men, .rates .women {
@@ -39,4 +40,9 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+.rates .cnt {
+	font-size: 8vw;
+	line-height: 1;
 }
