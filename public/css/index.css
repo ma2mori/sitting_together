@@ -21,7 +21,7 @@
 	display: grid;
 	height: 100%;
 	width: 100%;
-	padding: 10px;
+	padding: 5px 10px 5px;
 }
 
 .rates {
@@ -31,7 +31,7 @@
 }
 
 .rate-wrap .name {
-	font-size: 4vw;
+	font-size: 3vw;
 	text-align: center;
 	align-self: end;
 }
