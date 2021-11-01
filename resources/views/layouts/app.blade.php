@@ -12,7 +12,7 @@
  <header>
   <a class="top" href="{{route('/')}}">TOP</a>
   @auth
-  <a class="mypage" ref="{{ route('mypage.edit-profile') }}">MYPAGE</a>
+  <a class="mypage" href="{{ route('mypage.edit-profile') }}">MYPAGE</a>
   <form method="POST" action="{{ route('logout') }}">
    @csrf
    <button class="login-btn out">LOGOUT</button>
