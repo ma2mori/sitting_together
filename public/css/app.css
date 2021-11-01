@@ -22,7 +22,7 @@ body {
 
 header {
 	height: 60px;
-	padding: 10px;
+	padding: 20px;
 	display: flex;
 	align-items: center;
 	background: var(--base-header);
