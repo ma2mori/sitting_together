@@ -13,7 +13,7 @@ class AdminController extends Controller
 
 	public function index()
 	{
-		dd('admin画面です。');
+		return view('admin.index');
 	}
 
 }
