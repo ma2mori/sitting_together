@@ -1,12 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ShopsController;
 use App\Http\Controllers\MyPage\ProfileController;
 
 Auth::routes();
+
+Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 
 Route::get('/', [IndexController::class, 'showIndex'])->name('/');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
