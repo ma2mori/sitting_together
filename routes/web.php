@@ -10,6 +10,7 @@ use App\Http\Controllers\MyPage\ProfileController;
 Auth::routes();
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+Route::get('/admin/register-shop', [AdminController::class, 'showShopRegisterForm'])->name('admin.register-shop');
 
 Route::get('/', [IndexController::class, 'showIndex'])->name('/');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
