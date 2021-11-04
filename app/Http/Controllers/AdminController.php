@@ -20,7 +20,9 @@ class AdminController extends Controller
 	public function showShopRegisterForm()
 	{
 		$shops = Index::all();
-		return view('admin.shop_register_form',$shops);
+		return view('admin.shop_register_form',[
+			'shops' => $shops,
+		]);
 	}
 
 }
