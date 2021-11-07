@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div style="color: white">
-	<ul>
+	<ul class="shop-list">
 		<li>
 			<div>shop_id</div>
 			<div>code</div>
