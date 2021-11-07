@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@section('content')
 <style>
 	.shop-list{
 		width: 80%;
@@ -12,6 +11,7 @@
 		border: 1px solid;
 	}
 </style>
+@section('content')
 <div style="color: white">
 	<ul>
 		<li>
