@@ -1,5 +1,17 @@
 @extends('layouts.app')
 @section('content')
+<style>
+	.shop-list{
+		width: 80%;
+		margin: 30px auto;
+	}
+
+	.shop-list li{
+		display: grid;
+		grid-template-columns: repeat(12,1fr);
+		border: 1px solid;
+	}
+</style>
 <div style="color: white">
 	<ul>
 		<li>
