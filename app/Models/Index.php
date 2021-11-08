@@ -24,5 +24,6 @@ class Index extends Model
   'mens_charge',
   'price_weekdays_per10m',
   'price_holiday_per10m',
+  'image1',
  ];
 }

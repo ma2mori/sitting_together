@@ -25,4 +25,16 @@ class AdminController extends Controller
 		]);
 	}
 
+	public function registerShop(Request $request)
+	{
+
+		$shop_id = $request->route()->parameter('id');
+		Index::find($shop_id)->update(
+
+		);
+
+		// return redirect()->route('admin.register-shop);
+
+	}
+
 }
